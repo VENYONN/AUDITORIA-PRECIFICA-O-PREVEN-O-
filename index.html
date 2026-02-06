@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botões com Link</title>
+
+  <style>
+    :root {
+      --radius: 12px;
+      --font: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: #E9E9E9;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center; /* 👈 ESSENCIAL */
+    }
+
+    header {
+      text-align: center;
+      padding: 1.5rem;
+      background: #1294F7;
+      color: white;
+    }
+
+    main {
+      padding: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+      max-width: 900px;   /* largura máxima do bloco */
+  margin: 0 auto;     /* centraliza na página */
+    }
+
+    /* Link com aparência de botão */
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      border-radius: var(--radius);
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
+    }
+
+    /* Cores */
+    .btn-1  { background: #e74c3c; }
+    .btn-2  { background: #e67e22; }
+    .btn-3  { background: #f1c40f; }
+    .btn-4  { background: #1A6802; }
+    .btn-5  { background: #FF6EC7; }
+    .btn-6  { background: #3498db; }
+    .btn-7  { background: #B09161; }
+    .btn-8  { background: #E9BC79; }
+    .btn-9  { background: #3C3C3C; }
+    .btn-10 { background: #34495e; }
+    .btn-11 { background: #17E2CE; }
+    .btn-12 { background: #2c3e50; }
+    .btn-13 { background: #000000;
+    
+    .header-vermelho {
+        background: #C40000;
+        color: white;
+    }
+    
+    .header-marinho {
+        background: #00DC6E;
+        color: white;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>AUDITORIAS DE PRECIFICAÇÃO</h1>
+    <p>LINKS PARA OS FORMULÁRIOS DE AUDITORIA:</p>
+  </header>
+
+  <main>
+    <section aria-label="Links principais">
+      <a target="_blank" href="https://docs.google.com/forms/d/1yx9zuf0-eqDbcuICe29Ndp0nhnLWeEhkTUFr0MkAldI/edit" class="btn btn-1">AÇOUGUE</a>
+      <a target="_blank" href="https://docs.google.com/forms/d/150L2z94fe18syq4J80tEqu_SyrOOe-63Tb8Gd88UpAw/edit?usp=forms_home&ouid=104355111862212454585&ths=true" class="btn btn-2">SWIFT</a>
+      <a target="_blank" href="https://docs.google.com/forms/d/1CfV8liGOiVXAuSgshJWOsrvlHo4PvNDmH9ysMuwDxI4/edit" class="btn btn-3">MERCEARIA</a>
+      <a target="_blank" href="https://docs.google.com/forms/d/1biIcy2nVtYinqLSQkJQkexhlLpiHEJ3SQfSSZeUYThw/edit" class="btn btn-4">FLV</a>
+      <a target="_blank" href="https://docs.google.com/forms/d/1tQQhpGo5t3hlWw-5G9QhGOj8czX8RyLthTJc4SfT65s/edit?usp=forms_home&ouid=104355111862212454585&ths=true" class="btn btn-5">DAISO</a>
+      <a target="_blank" href="https://docs.google.com/forms/d/16b0Gi8LWljGx6lo0ScouG5MWK1dB-HZ5MQv_xuIyK7A/edit?usp=forms_home&ouid=104355111862212454585&ths=true" class="btn btn-6">FRIOS</a>
+      <a target="_blank" href="https://docs.google.com/forms/d/1riCM82-7FF0c-qMnN1-zjNeEEoXL9u6Ncch3iVchzco/edit" class="btn btn-7">BAZAR</a>
+      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeTta6E9j_r7kvGk3154g6ShdLQdubiUReIeViaT1nCqxw7Nw/viewform?usp=sharing&ouid=104355111862212454585" class="btn btn-8">ADEGA</a>
+      <a target="_blank" href="https://docs.google.com/forms/d/1N2qC3Mr_F5sZ-KNGwUepaSLiJINj1utIZF3fR_h00Lk/edit?usp=forms_home&ouid=104355111862212454585&ths=true" class="btn btn-9">TROCA DIARIA</a>
+      <a target="_blank" href="https://docs.google.com/forms/d/1Z0gpzD8vf4-loQsShU0ufqRdB8q7Oi-bXgNiHzTTprs/edit?usp=forms_home&ouid=104355111862212454585&ths=true" class="btn btn-10">RÉGUAS</a>
+      <a target="_blank" href="https://docs.google.com/forms/d/10YL_EGIa9VU04iNEWyAJ11A5W_Qub9E6iWPz1pY6n1Q/edit" class="btn btn-11">PROD.RET.</a>
+    </section>
+    
+    <h1></h1>
+    
+    <header class="header-marinho">
+        <h1>RESULTADOS DAS AUDITORIAS</h1>
+        <p>LINKS PARA OS RESUMOS DAS AUDITORIAS REALIZADAS</p>
+    </header>
+    
+    <h1></h1>
+    
+    <section aria-label="Links principais">
+      <a target="_blank" href="https://docs.google.com/spreadsheets/d/1nfnSBMRvno56SVKrgyrqaOhT9Yc06x0RK1UE_lAN3-c/edit?usp=sharing" class="btn btn-1">AÇOUGUE</a>
+      <a target="_blank" href="https://docs.google.com/spreadsheets/d/1tpiAgw5ezElvcbJZqduCOUP8-s5rd5ZbZvp8gmJkzDA/edit?resourcekey=&gid=83431329#gid=83431329" class="btn btn-2">SWIFT</a>
+      <a target="_blank" href="https://docs.google.com/spreadsheets/d/14l0ro6kkCzkoLDHCJwXFPTlwB4btSSEpuF5mwzvwYw8/edit?resourcekey&usp=forms_web_b&urp=linked#gid=449807469" class="btn btn-3">MERCEARIA</a>
+      <a target="_blank" href="https://docs.google.com/spreadsheets/d/1-saSeSw2Cn1yRj3Nicn_lErCXiNnimOQtd-rsUiU_HY?resourcekey=&usp=forms_web_b&urp=linked#gid=1231431533" class="btn btn-4">FLV</a>
+      <a target="_blank" href="https://docs.google.com/spreadsheets/d/1JJCfHYpdrO70TNxl1s9AdUfl7Eudmwkzie6f0dBulVU/edit?resourcekey&usp=forms_web_b&urp=linked#gid=1848525749" class="btn btn-5">DAISO</a>
+      <a target="_blank" href="https://docs.google.com/spreadsheets/d/1NnhNnnwT0sNnuEzeLnthodYKYMCsvloaksrBAXEpoIo?resourcekey=&usp=forms_web_b&urp=linked#gid=1959364246" class="btn btn-6">FRIOS</a>
+      <a target="_blank" href="https://docs.google.com/spreadsheets/d/1vIf2BNEYxtgSF0u3darsJqc7Sv8QfWj0Z-ZVmGWJnN0/edit?resourcekey&usp=forms_web_b&urp=linked#gid=1555328570" class="btn btn-7">BAZAR</a>
+      <a target="_blank" href="https://docs.google.com/spreadsheets/d/1RDt0j7_tzOtVhMoXJMl5758rbI1-CBZbePMfJUuYAQ8/edit?resourcekey=&gid=2042603228#gid=2042603228" class="btn btn-8">ADEGA</a>
+    </section>
+    
+    <h1></h1>
+    
+    <header class="header-vermelho">
+        <h1>RUPTURAS</h1>
+        <p>LINKS PARA AS TABELAS E FORMULÁRIO DE RUPTURA</p>
+    </header>
+    
+    <h1></h1>
+    
+    <section aria-label="Links principais">
+      <a target="_blank" href="" class="btn btn-1">ESCALA DE PROMOTORES</a>
+      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc3prgzFvoVjNHYRuh1r8VqUtdDtntyb-HiKQaKBTqepprseg/viewform" class="btn btn-13">SOL.INVENTÁRIO</a>
+      
+    </section>
+    
+  </main>
+</body>
+</html>
