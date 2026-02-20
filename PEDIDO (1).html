@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PREVENÇÃO H11 0.1.5</title>
+
+  <style>
+    :root {
+      --radius: 12px;
+      --font: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: #E9E9E9;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 1.5rem;
+      background: #1294F7;
+      color: white;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* MENU ABAIXO DO HEADER */
+    .top-menu {
+      background: #0B5ED7;
+      padding: 0.75rem 1rem;
+    }
+
+    .top-menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+
+    .top-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+
+    .top-menu a:hover {
+      opacity: 0.8;
+    }
+
+    main {
+      padding: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      border-radius: var(--radius);
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
+    }
+
+    .btn-1  { background: #e74c3c; }
+    .btn-2  { background: #e67e22; }
+    .btn-3  { background: #f1c40f; }
+    .btn-4  { background: #1A6802; }
+    .btn-5  { background: #FF6EC7; }
+    .btn-6  { background: #3498db; }
+    .btn-7  { background: #B09161; }
+    .btn-8  { background: #E9BC79; }
+    .btn-9  { background: #3C3C3C; }
+    .btn-10 { background: #34495e; }
+    .btn-11 { background: #17E2CE; }
+    .btn-12 { background: #2c3e50; }
+    .btn-13 { background: #000000; }
+
+    .header-vermelho {
+      background: #C40000;
+      color: white;
+    }
+
+    .header-marinho {
+      background: #00DC6E;
+      color: white;
+    }
+
+    /* RODAPÉ */
+    .footer {
+      margin-top: 3rem;
+      padding: 1rem;
+      background: #333;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER PRINCIPAL -->
+  <header>
+    <h1>PEDIDOS SISTEMATICA-20</h1>
+    <p>FORMULÁRIOS PARA REALIZAÇÃO DE PEDIDOS E ACOMPANHAMENTOS</p>
+  </header>
+
+  <!-- MENU -->
+  <nav class="top-menu">
+    <ul>
+      <li><a href="index.html">INÍCIO</a></li>
+      <li><a href="PRECIFICAO.html">PRECIFICAÇÃO</a></li>
+      <li><a href="#">VALIDADE</a></li>
+      <li><a href="RUPTURA.html">RUPTURAS</a></li>
+      <li><a href="#">PEDIDOS</a></li>
+      <li><a href="#">CARTAZ</a></li>
+    </ul>
+  </nav>
+
+  <main>
+      
+      <header class="header-marinho">
+      <h1>PEDIDOS E ACOMPANHAMENTOS</h1>
+      <p>FORMULÁRIO PARA PEDIDOS E TABELA DE ACOMPANHAMENT</p>
+    </header>
+    
+    <H1></H1>
+      
+    <section aria-label="Links principais">
+      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdMRsuiWMsN_6b3D2BzEBYF9DBYCJEhC5FzLUN0qoJleLar6Q/viewform?usp=sharing&ouid=104355111862212454585" class="btn btn-1">PEDIDOS DE EMBALAGENS</a>
+      <a target="_blank" href="https://docs.google.com/spreadsheets/d/1PFtkNIh9aXT-BaZ4kwkpGr0JXF34EIZFv4ErkQfSN84/edit?resourcekey=&gid=940431236#gid=940431236" class="btn btn-13">ACOMPANHAMENTO</a>
+    </section>
+      
+  </main>
+
+  <footer class="footer">
+    © 2026 • Auditorias de Precificação • Uso interno
+  </footer>
+
+</body>
+</html>
